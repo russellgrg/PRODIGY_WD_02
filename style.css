@@ -1,0 +1,157 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === WRAPPER & TITLE === */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.stopwatch-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* === CONTAINER / CARD === */
+.container {
+  background-color: white;
+  padding: 4rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* === TIMER DISPLAY === */
+#display {
+  font-size: 5rem;
+  font-weight: 300; 
+  margin-bottom: 1.5rem;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+/* === BUTTONS === */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 12px 24px;
+  height: 50px;               
+  min-width: 100px;           
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Individual Button Colors */
+.start {
+  background: #4caf50;
+  color: white;
+}
+.start:hover {
+  background: #43a047;
+}
+
+.pause {
+  background: #ff9800;
+  color: white;
+}
+.pause:hover {
+  background: #fb8c00;
+}
+
+.reset {
+  background: #f44336;
+  color: white;
+}
+.reset:hover {
+  background: #e53935;
+}
+
+.lap {
+  background: #2196f3;
+  color: white;
+}
+.lap:hover {
+  background: #1e88e5;
+}
+
+.clear-laps {
+  padding: 10px 16px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-laps:hover {
+  background-color: #5a6268;
+}
+
+/* === LAPS SECTION === */
+.laps {
+  text-align: left;
+  max-height: 250px;
+  overflow-y: scroll;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.laps h2 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.laps ul {
+  list-style-type: decimal;
+  padding-left: 3rem;  /* enough space for 3-digit lap numbers */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.laps li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #555;
+  white-space: nowrap; /* prevents wrapping */
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 400px) {
+  .buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
