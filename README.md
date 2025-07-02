@@ -9,6 +9,12 @@ This project is a responsive and interactive **Stopwatch Web Application** built
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Click here to view it live](https://russellgrg.github.io/PRODIGY_WD_02/)
+
+---
+
 ## ✅ Features
 
 - ⏱️ Real-time stopwatch display
